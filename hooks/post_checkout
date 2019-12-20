@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Enabling binfmt support."
+docker run --rm --privileged multiarch/qemu-user-static:register --reset
+
+# end
