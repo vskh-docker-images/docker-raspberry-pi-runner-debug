@@ -7,6 +7,7 @@ LABEL "description"="Raspbian Stretch container with libraspberrypi."
 RUN apt update && \
     apt upgrade -y && \
     apt install -y libraspberrypi-bin && \
+    apt install -y gdb && \
     apt clean
 
 ENTRYPOINT [ "/bin/bash" ]
