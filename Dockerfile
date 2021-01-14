@@ -1,8 +1,8 @@
 # Dockerfile to run stuff on Raspberry Pi
 
-FROM raspbian/stretch:latest
+FROM balenalib/raspberry-pi-debian:latest
 LABEL "maintainer"="Vadym S. Khondar <vadym@khondar.name>"
-LABEL "description"="Raspbian Stretch container with libraspberrypi."
+LABEL "description"="Rapbian Buster (belenaOS) container with libraspberrypi & gdb."
 
 RUN apt update && \
     apt upgrade -y && \
